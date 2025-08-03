@@ -2,11 +2,9 @@
 Javascript Challenges 
 VERY HARD 
 
-
 Create a Person constructor that has three properties: name, job, and age.
 Give the Person an 'exercise' method that console logs whatever you want, e.g. "Running is fun! - said no one ever".
 Give the Person a 'fetchJob' method that console logs the person's name and job, e.g. "Brad is a back-end developer".
-
 */
 
 
@@ -14,7 +12,6 @@ const Person = function (name, job, age) { //function or constructor function wh
     this.name = name; //taking the parameters & creating properties matching their value(s)
     this.job = job;
     this.age = age;
-
 };
 
 const person1 = new Person('Bob', 'builder', 30); //calls the person function & creates the object
@@ -30,6 +27,6 @@ Person.prototype.fetchjob = function () { //fetchjob method, gets the job of the
 
 person1.fetchjob(); //calls the fetchjob method
 
-// const programmer = function () {
+// const programmer = function () { --- Note to self: Continue working on the rest of the code.
 
 // }

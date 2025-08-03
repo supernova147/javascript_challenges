@@ -20,18 +20,3 @@ const exerciseOfTheDay = () => { //Parent function 'exerciseOfTheDay'
 const exercise_announce = exerciseOfTheDay(); //constant exercise_announce is made to "call" the closure
 exercise_announce(); //closure is ran
 
-//closure notes:
-/* 
-
-
-*/
-// const secureBooking = function() {
-//     let passengerCount = 0;
-
-//     return function() {
-//         passengerCount++;
-//         console.log('${passengerCount} passengers');
-//     }
-// } // call stack - order in which functions were called
-
-// const booker =secureBooking();
