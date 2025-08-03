@@ -9,16 +9,16 @@ exercise: running
 
 // Takes input of the name of the exercise 
 // & consoles logs a message like: "Today's exercise: running"
-const exerciseOfTheDay = () => {
-    let exercise = '';
-    return function() {
-        exercise = 'Swimming';
-        console.log(`Today's exercise: ${exercise}`);
+const exerciseOfTheDay = () => { //Parent function 'exerciseOfTheDay'
+    let exercise = ''; //var declared for string value for exercise
+    return function() { //child function which returns the chosen var & console log.
+        exercise = 'Swimming'; //chosen exercise is swimming
+        console.log(`Today's exercise: ${exercise}`); //outputs to the console the chosen exercise
     }
 }
 
-const exercise_announce = exerciseOfTheDay();
-exercise_announce();
+const exercise_announce = exerciseOfTheDay(); //constant exercise_announce is made to "call" the closure
+exercise_announce(); //closure is ran
 
 //closure notes:
 /* 
